@@ -1,0 +1,20 @@
+module top (input [0:0] a, input [0:0] b, input [0:0] c, input [0:0] d, input [0:0] e, input [0:0] f, input [0:0] g, input [0:0] h, input [0:0] i, input [0:0] j, input [0:0] k, input [0:0] A, input [0:0] B, input [0:0] C, input [0:0] D, input [0:0] E, output [0:0] out);
+
+wire r6;
+wire r10;
+wire r19;
+LUT5 #(.INIT(32'hffff4bbb)) i30(.I0(r6), .I1(B[0]), .I2(E[0]), .I3(r10), .I4(d[0]), .O(r10));
+LUT6 #(.INIT(64'h7fff0000ffffffff))  i28(.I0(A[0]), .I1(b[0]), .I2(a[0]), .I3(out[0]), .I4(h[0]), .I5(c[0]), .O(r6));
+LUT6 #(.INIT(64'h40ffbf0000000000)) i32(.I0(e[0]), .I1(C[0]), .I2(r10), .I3(f[0]), .I4(h[0]), .I5(D[0]), .O(n30));
+LUT5 #(.INIT(32'h10010000)) i33(.I0(i[0]), .I1(g[0]), .I2(r19), .I3(n30), .I4(j[0]), .O(r19));
+LUT6 #(.INIT(64'h5455555455555555)) i35(.I0(k[0]), .I1(i[0]), .I2(g[0]), .I3(r19), .I4(n30), .I5(j[0]), .O(out[0]));
+
+endmodule
+
+
+
+module m2(input [1:3] A, output [2:2] O);
+wire w1;
+wire w2;
+wire w3;
+endmodule
